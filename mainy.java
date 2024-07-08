@@ -1,20 +1,17 @@
 import java.util.*;
-
-
 public class mainy {
+    public static void main(String[] args) {
+        // Example usage:
+        int number = 24;
+        if (isEven(number)) {
+            System.out.println(number + " is an even number.");
+        } else {
+            System.out.println(number + " is an odd number.");
+        }
+    }
 
-    public static int calculateProduct(int a, int b) {
-        return a * b;
-     }
-  
-    public static void main(String args[]) {
-
-
-        Scanner sc = new Scanner(System.in);
-
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-
-        System.out.println(calculateProduct(a,b));
+    public static boolean isEven(int n) {
+        // A number is even if it is divisible by 2 with no remainder
+        return n % 2 == 0;
     }
 }
