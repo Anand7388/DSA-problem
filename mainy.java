@@ -1,23 +1,20 @@
 import java.util.*;
 
-public class mainy {
-    public static void main(String[] args) {
-        // Example usage:
-        int number = 20;
-        long factorial = calculateFactorial(number);
-        System.out.println("Factorial of " + number + " is: " + factorial);
-    }
 
-    public static long calculateFactorial(int n) {
-        if (n < 0) {
-            throw new IllegalArgumentException("Factorial is not defined for negative numbers.");
-        }
-        
-        long factorial = 1;
-        for (int i = 1; i <= n; i++) {
-            factorial *= i;
-        }
-        
-        return factorial;
+public class mainy {
+
+    public static int calculateProduct(int a, int b) {
+        return a * b;
+     }
+  
+    public static void main(String args[]) {
+
+
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.println(calculateProduct(a,b));
     }
 }
